@@ -9,6 +9,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <h1>Please click on shop.....</h1>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection/all' element={<Shop />} />

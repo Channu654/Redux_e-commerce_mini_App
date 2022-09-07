@@ -17,7 +17,7 @@ export const getdata = (params) => (dispatch) => {
 export const singleproduct = (id) => (dispatch) => {
   type({ type: types.SINGLE_PRODUCT_REQUEST });
   return axios
-    .get(`http://localhost:8080/data/${id}`)
+    .get(`https://redux-mini-cart-project.herokuapp.com/data/${id}`)
     .then((res) =>
       dispatch({ type: types.SINGLE_PRODUCT_SUCCESS, payload: res.data })
     )
@@ -29,7 +29,7 @@ export const singleproduct = (id) => (dispatch) => {
 export const AddtoCart = (payload) => (dispatch) => {
   dispatch({ type: types.ADDTO_CART_REQUEST });
   return axios
-    .post('http://localhost:8080/cart', payload)
+    .post('https://redux-mini-cart-project.herokuapp.com/cart', payload)
     .then((res) =>
       dispatch({ type: types.ADDTO_CART_SUCCESS, payload: res.data })
     )
