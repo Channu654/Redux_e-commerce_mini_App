@@ -101,7 +101,7 @@ const Navbar = () => {
         _hover={'background:yellow'}
         className='cur'
       />
-      <Text position={"absolute"} px={1060}>{Addto_cart ? Addto_cart.length : 0}</Text>
+      <Text position={"absolute"} px={1320}>{Addto_cart ? Addto_cart.length : 0}</Text>
       <Drawer
         isOpen={isOpen}
         placement='right'
